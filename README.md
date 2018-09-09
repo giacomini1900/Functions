@@ -20,6 +20,8 @@ pcaplot3d(DESeqTransform object,intgroup = "condition",ntop = 1000,
 #Counts plot of gene + condition
 
 #library(DESeq2)
+
+
 plotCounts( object DESeqDataSets, gene="", intgroup = "condition"))
 geneCounts <- plotCounts(MatrixDESeqData, gene = "MAPK15", intgroup = c("cond"), returnData = TRUE)
 ggplot(geneCounts, aes(x =  cond, y = count, color = cond)) +
