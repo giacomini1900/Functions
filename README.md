@@ -1,6 +1,8 @@
 # Functions
-#PCA
-library(DESeq2)
+
+PCA
+#library(DESeq2)
+
 plotPCA(DESeqTransform object, intgroup = "condition", ntop = 500, returnData = FALSE)
 #object--> DESeqTransform object, with data in assay(x), produced for example by either rlog or varianceStabilizingTransformation.
 
@@ -16,6 +18,7 @@ pcaplot3d(DESeqTransform object,intgroup = "condition",ntop = 1000,
 
 
 #Counts plot of gene + condition
+
 library(DESeq2)
 plotCounts( object DESeqDataSets, gene="", intgroup = "condition"))
 geneCounts <- plotCounts(MatrixDESeqData, gene = "MAPK15", intgroup = c("cond"), returnData = TRUE)
