@@ -1,13 +1,15 @@
 # Functions
 
-PCA
-#library(DESeq2)
+#PCA
+
+library(DESeq2)
 
 plotPCA(DESeqTransform object, intgroup = "condition", ntop = 500, returnData = FALSE)
 #object--> DESeqTransform object, with data in assay(x), produced for example by either rlog or varianceStabilizingTransformation.
 
 
-#library( pcaExplorer)
+library( pcaExplorer)
+
 pcaplot(DESeqTransform object,intgroup = "condition", ntop = 500,
         pcX = 1, pcY = 3, title = " ",text_labels = FALSE, point_size = 2, ellipse = FALSE )
 
