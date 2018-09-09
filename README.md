@@ -2,7 +2,7 @@
 #PCA
 library(DESeq2)
 plotPCA(DESeqTransform object, intgroup = "condition", ntop = 500, returnData = FALSE)
-# object--> DESeqTransform object, with data in assay(x), produced for example by either rlog or varianceStabilizingTransformation.
+#object--> DESeqTransform object, with data in assay(x), produced for example by either rlog or varianceStabilizingTransformation.
 
 
 library( pcaExplorer)
